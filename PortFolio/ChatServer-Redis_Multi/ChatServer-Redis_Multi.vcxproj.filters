@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GameServerLib">
+      <UniqueIdentifier>{a3c84db6-2a66-463a-98d5-f9b3fb53200c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Job">
+      <UniqueIdentifier>{ca0ee171-9cb6-4f02-85bd-635bc15e4542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginChatServer">
+      <UniqueIdentifier>{66e97314-1313-4b8e-8f2b-1a5a37d20943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MakePacket">
+      <UniqueIdentifier>{eb0f3a37-acf8-4e18-b9bc-c76ea3744ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RecvLayer">
+      <UniqueIdentifier>{7086a1be-a219-4aad-b2e7-478e4ba2e369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sector">
+      <UniqueIdentifier>{206b6ac8-9115-49bc-9bac-d4353c023914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon">
+      <UniqueIdentifier>{e151c4fd-ac02-4cad-a3e5-660c1b6bb089}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ErrType.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerTimeOut.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ParallelContent.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadMessage.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsBase.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Assert.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CAddressTranslator.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinkedList.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeQueue.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeStack.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CTlsObjectPool.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitorable.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="HMonitor.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RingBuffer.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateBase.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisClientWrapper.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="MYOVERLAPPED.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvLayer.h">
+      <Filter>RecvLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DuplicateLogin.h">
+      <Filter>RecvLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Sector.h">
+      <Filter>Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="SCCContents.h">
+      <Filter>MakePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>LoginChatServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginChatServer.h">
+      <Filter>LoginChatServer</Filter>
+    </ClInclude>
+    <ClInclude Include="JobProcessLayer.h">
+      <Filter>Job</Filter>
+    </ClInclude>
+    <ClInclude Include="Job.h">
+      <Filter>Job</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>MakePacket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerTimeOut.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelContent.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsBase.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CLinkedList.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="HMonitor.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBuffer.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateBase.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DuplicateLogin.cpp">
+      <Filter>RecvLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvLayer.cpp">
+      <Filter>RecvLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Sector.cpp">
+      <Filter>Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="SCCContents.cpp">
+      <Filter>MakePacket</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginChatServer.cpp">
+      <Filter>LoginChatServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Job</Filter>
+    </ClCompile>
+    <ClCompile Include="JobProcessLayer.cpp">
+      <Filter>Job</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
