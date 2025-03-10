@@ -185,6 +185,9 @@
     <ClCompile Include="Sector.cpp" />
     <ClCompile Include="UpdateBase.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="LoginChatConfig.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

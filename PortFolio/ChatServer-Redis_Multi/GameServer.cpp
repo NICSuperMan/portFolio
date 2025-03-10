@@ -509,12 +509,6 @@ unsigned __stdcall GameServer::IOCPWorkerThread(LPVOID arg)
 				break;
 			}
 
-			//case OVERLAPPED_REASON::DB_WRITE_TIMEOUT:
-			//{
-			//	bContinue = true;
-			//	break;
-			//}
-
 			default:
 				__debugbreak();
 			}
@@ -535,66 +529,6 @@ unsigned __stdcall GameServer::IOCPWorkerThread(LPVOID arg)
 	return 0;
 }
 
-//unsigned __stdcall GameServer::AcceptThread(LPVOID arg)
-//{
-//	SOCKET clientSock;
-//	SOCKADDR_IN clientAddr;
-//	int addrlen;
-//	GameServer* pGameServer = (GameServer*)arg;
-//	addrlen = sizeof(clientAddr);
-//
-//	while (1)
-//	{
-//		clientSock = accept(pGameServer->hListenSock_, (SOCKADDR*)&clientAddr, &addrlen);
-//		InterlockedIncrement((LONG*)&pGameServer->acceptCounter_);
-//
-//		if (clientSock == INVALID_SOCKET)
-//		{
-//			DWORD dwErrCode = WSAGetLastError();
-//			if (dwErrCode != WSAEINTR && dwErrCode != WSAENOTSOCK)
-//			{
-//				__debugbreak();
-//			}
-//			return 0;
-//		}
-//
-//		WCHAR ip[16];
-//		InetNtop(AF_INET, &clientAddr.sin_addr, ip, 16);
-//		if (!pGameServer->OnConnectionRequest(ip, ntohs(clientAddr.sin_port)))
-//		{
-//			closesocket(clientSock);
-//			continue;
-//		}
-//
-//		// 빈자리가없음 즉 MaxSession
-//		auto&& opt = pGameServer->idxStack_.Pop();
-//		if (!opt.has_value())
-//		{
-//			closesocket(clientSock);
-//			continue;
-//		}
-//
-//		InterlockedIncrement((LONG*)&pGameServer->lSessionNum_);
-//
-//		short idx = opt.value();
-//		GameSession* pSession = pGameServer->pSessionArr_ + idx;
-//		pSession->Init(clientSock, pGameServer->ullIdCounter, idx);
-//
-//		// 필요할때 쓸일잇으면 쓰라고(주로 블랙 IP로 지정하거나, 로그인서버에서 더미때문에만 씀)
-//		CreateIoCompletionPort((HANDLE)pSession->sock_, pGameServer->hcp_, (ULONG_PTR)pSession, 0);
-//		++pGameServer->ullIdCounter;
-//
-//		InterlockedIncrement(&pSession->refCnt_);
-//		InterlockedAnd(&pSession->refCnt_, ~GameSession::RELEASE_FLAG);
-//
-//		pGameServer->OnAccept(pGameServer->GetPlayer(pSession));
-//		pGameServer->RecvPost(pSession);
-//
-//		if (InterlockedDecrement(&pSession->refCnt_) == 0)
-//			pGameServer->ReleaseSession(pSession);
-//	}
-//	return 0;
-//}
 
 GameSession* GameServer::GetSession(const void* pPlayer)
 {

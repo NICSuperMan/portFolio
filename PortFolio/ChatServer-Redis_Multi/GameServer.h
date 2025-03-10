@@ -46,7 +46,6 @@ public:
 
 private:
 	static unsigned __stdcall IOCPWorkerThread(LPVOID arg);
-	//static unsigned __stdcall AcceptThread(LPVOID arg);
 	GameSession* GetSession(const void* pPlayer);
 	void* GetPlayer(const GameSession* pSession);
 

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ChatContents">
+      <UniqueIdentifier>{70bea654-94ac-406e-8cad-7c651e653f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameServerLib">
+      <UniqueIdentifier>{b37ea685-3a90-4dc4-ab76-c71335c35f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LanClient">
+      <UniqueIdentifier>{ae696687-5297-41b0-be60-b15aabc94aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginContents">
+      <UniqueIdentifier>{489ba857-ce80-4660-b75e-59ca6489807d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MakePacket">
+      <UniqueIdentifier>{287329af-3d94-4e07-ab50-216180b49460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{c1eccc72-3f15-4605-977c-61f079ba02d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sector">
+      <UniqueIdentifier>{48dcb482-d268-4a50-8046-7d52bcd6b165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon">
+      <UniqueIdentifier>{f8c3fa3a-f4bb-47cd-b7ab-a4869a75218e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginChatServer">
+      <UniqueIdentifier>{50fe57e4-9cca-48d6-a4d4-234cc0467c97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMClient.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="MYOVERLAPPED.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisClientWrapper.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerNum.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Assert.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinkedList.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CAddressTranslator.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeStack.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CTlsObjectPool.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeObjectPool.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeQueue.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitorable.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="HMonitor.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RingBuffer.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateBase.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Sector.h">
+      <Filter>Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="SCCContents.h">
+      <Filter>MakePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginContents.h">
+      <Filter>LoginContents</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginChatServer.h">
+      <Filter>LoginChatServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>LoginChatServer</Filter>
+    </ClInclude>
+    <ClInclude Include="en_ChatContentsType.h">
+      <Filter>LoginChatServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LanClientSession.h">
+      <Filter>LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="LanClient.h">
+      <Filter>LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatContents.h">
+      <Filter>ChatContents</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialContent.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadMessage.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsBase.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsType.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrType.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerTimeOut.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ParallelContent.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMClient.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="CLinkedList.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="HMonitor.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBuffer.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateBase.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Sector.cpp">
+      <Filter>Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="SCCContents.cpp">
+      <Filter>MakePacket</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginContents.cpp">
+      <Filter>LoginContents</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginChatServer.cpp">
+      <Filter>LoginChatServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LanClientSession.cpp">
+      <Filter>LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="LanClient.cpp">
+      <Filter>LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatContents.cpp">
+      <Filter>ChatContents</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialContent.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsBase.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerTimeOut.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelContent.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LoginChatConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+    <Text Include="LoginChatLanClientConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

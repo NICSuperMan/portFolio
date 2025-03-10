@@ -26,6 +26,9 @@
     <Filter Include="ServerCommon">
       <UniqueIdentifier>{e151c4fd-ac02-4cad-a3e5-660c1b6bb089}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{81e3fddf-9ebd-4a9e-9b2f-b498c2f23d18}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ErrType.h">
@@ -180,5 +183,10 @@
     <ClCompile Include="JobProcessLayer.cpp">
       <Filter>Job</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LoginChatConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
   </ItemGroup>
 </Project>
