@@ -7,18 +7,20 @@
 #include <Assert.h>
 #include "LoginServer.h"
 #include "LoginContent.h"
-#include "Parser.h"
 #include "LoginPlayer.h"
 #pragma comment(lib,"libmysql.lib")
 
 using namespace cpp_redis;
+
+constexpr int ID_LEN = 20;
+constexpr int NICK_NAME_LEN = 20;
 constexpr int SESSION_KEY_LEN = 64;
 
 void MAKE_CS_LOGIN_RES_LOGIN(ULONGLONG id, INT64 accountNo, BYTE status, WCHAR* pID, WCHAR* pNickName, WCHAR* pGameServerIP, SHORT gamePort, WCHAR* pChatServerIP, SHORT chatServerPort, SmartPacket& sp)
 {
     *sp << (WORD)en_PACKET_CS_LOGIN_RES_LOGIN << accountNo << status;
-    sp->PutData((char*)pID, 20 * sizeof(WCHAR));
-    sp->PutData((char*)pNickName, 20 * sizeof(WCHAR));
+    sp->PutData((char*)pID, ID_LEN * sizeof(WCHAR));
+    sp->PutData((char*)pNickName, NICK_NAME_LEN * sizeof(WCHAR));
     sp->PutData((char*)pGameServerIP, 16 * sizeof(WCHAR));
     *sp << gamePort;
     sp->PutData((char*)pChatServerIP, 16 * sizeof(WCHAR));
@@ -110,8 +112,7 @@ void LoginContent::OnRecv(Packet* pPacket, void* pPlayer)
         if (0 == wcscmp(pIP, L"10.0.1.2"))
         {
             // 로그인 성공 통지 패킷 생성
-            MAKE_CS_LOGIN_RES_LOGIN(pLoginPlayer->sessionID, accountNo, 1, ID, NICK, onePointOne,
-                pLoginServer_->ChatServerPort_, onePointOne, pLoginServer_->ChatServerPort_, sp);
+            MAKE_CS_LOGIN_RES_LOGIN(pLoginPlayer->sessionID, accountNo, 1, ID, NICK, onePointOne, pLoginServer_->ChatServerPort_, onePointOne, pLoginServer_->ChatServerPort_, sp);
         }
         else
         {

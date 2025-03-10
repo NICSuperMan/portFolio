@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)MySqlUtil\MySQL\MySQL Server 8.0\include;$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -119,15 +122,59 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\MySqlUtil\DBWriteThread.h" />
+    <ClInclude Include="..\MySqlUtil\QueryFactory.h" />
+    <ClInclude Include="..\Parser.h" />
+    <ClInclude Include="..\Scheduler\Scheduler.h" />
+    <ClInclude Include="..\Scheduler\UpdateBase.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h" />
+    <ClInclude Include="ChatData.h" />
+    <ClInclude Include="DBWriteType.h" />
+    <ClInclude Include="EchoData.h" />
+    <ClInclude Include="LanServer\LanServer.h" />
+    <ClInclude Include="LanServer\LanServerTimeOut.h" />
+    <ClInclude Include="LanServer\LanSession.h" />
+    <ClInclude Include="LoginData.h" />
+    <ClInclude Include="MonitorData.h" />
+    <ClInclude Include="MonitorDbThread.h" />
+    <ClInclude Include="MonitorLanServer.h" />
+    <ClInclude Include="MonitorNetServer.h" />
+    <ClInclude Include="NetServer\ErrType.h" />
+    <ClInclude Include="NetServer\NetServer.h" />
+    <ClInclude Include="NetServer\NetSession.h" />
+    <ClInclude Include="ServerCommonData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MySqlUtil\DBWriteThread.cpp" />
+    <ClCompile Include="..\MySqlUtil\QueryFactory.cpp" />
+    <ClCompile Include="..\Scheduler\Scheduler.cpp" />
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp" />
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp" />
+    <ClCompile Include="LanServer\LanServer.cpp" />
+    <ClCompile Include="LanServer\LanServerTimeOut.cpp" />
+    <ClCompile Include="LanServer\LanSession.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MonitorDbThread.cpp" />
+    <ClCompile Include="MonitorLanServer.cpp" />
+    <ClCompile Include="MonitorNetServer.cpp" />
+    <ClCompile Include="NetServer\NetServer.cpp" />
+    <ClCompile Include="NetServer\NetSession.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MonitorLanConfig.txt" />
+    <Text Include="MonitorNetConfig.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

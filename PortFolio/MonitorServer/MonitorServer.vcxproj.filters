@@ -5,9 +5,149 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="MonitoringData">
+      <UniqueIdentifier>{e916f597-8557-43b5-a384-5a8514406d04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NetServer">
+      <UniqueIdentifier>{b2d1e47f-5282-42e9-8536-3d07a751e01c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{b3a4b2da-0aa0-456d-83ee-c678eec273eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LanServer">
+      <UniqueIdentifier>{954d0d35-e878-4d5d-9efb-9b72944f1d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MonitorNetServer">
+      <UniqueIdentifier>{cf5adfd9-11ee-4d88-8f72-0305746aace9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MonitorLanServer">
+      <UniqueIdentifier>{0cf08135-249b-4af4-8526-b5d8fe1fbfeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MonitorDbWrite">
+      <UniqueIdentifier>{aa3d8ab8-8d0f-4561-a877-a6c6fe9f5cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{be827e3a-0ca3-406b-a285-6539f329d2db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetServer\NetSession.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServer\NetServer.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetServer\ErrType.h">
+      <Filter>NetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\Scheduler.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\UpdateBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginData.h">
+      <Filter>MonitoringData</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorData.h">
+      <Filter>MonitoringData</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatData.h">
+      <Filter>MonitoringData</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoData.h">
+      <Filter>MonitoringData</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerCommonData.h">
+      <Filter>MonitoringData</Filter>
+    </ClInclude>
+    <ClInclude Include="LanServer\LanServer.h">
+      <Filter>LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LanServer\LanServerTimeOut.h">
+      <Filter>LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LanServer\LanSession.h">
+      <Filter>LanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorLanServer.h">
+      <Filter>MonitorLanServer</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorNetServer.h">
+      <Filter>MonitorNetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorDbThread.h">
+      <Filter>MonitorDbWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="DBWriteType.h">
+      <Filter>MonitorDbWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MySqlUtil\QueryFactory.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MySqlUtil\DBWriteThread.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Parser.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetServer\NetServer.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetServer\NetSession.cpp">
+      <Filter>NetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\Scheduler.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="LanServer\LanServer.cpp">
+      <Filter>LanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LanServer\LanServerTimeOut.cpp">
+      <Filter>LanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LanServer\LanSession.cpp">
+      <Filter>LanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorLanServer.cpp">
+      <Filter>MonitorLanServer</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorNetServer.cpp">
+      <Filter>MonitorNetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorDbThread.cpp">
+      <Filter>MonitorDbWrite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MySqlUtil\QueryFactory.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MySqlUtil\DBWriteThread.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MonitorLanConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+    <Text Include="MonitorNetConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
   </ItemGroup>
 </Project>

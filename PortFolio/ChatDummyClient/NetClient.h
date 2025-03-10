@@ -3,6 +3,7 @@
 #include <MSWSock.h>
 #include <windows.h>
 #include <mutex>
+#include <DataStructure/CLockFreeStack.h>
 
 struct NetClientSession;
 

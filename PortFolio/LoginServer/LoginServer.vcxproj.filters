@@ -14,6 +14,9 @@
     <Filter Include="Config">
       <UniqueIdentifier>{4d59e8a7-2c4b-49d0-a995-0e4ad88200b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{100e0ddd-fb09-4813-ad8e-d5b280cebc07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoginServer.h">
@@ -25,6 +28,60 @@
     <ClInclude Include="LoginContent.h">
       <Filter>LoginContents</Filter>
     </ClInclude>
+    <ClInclude Include="..\PdhMonitor\HMonitor.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameSession.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ParallelContent.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ThreadMessage.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ErrType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameServer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\Scheduler.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\UpdateBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CLinkedList.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MySqlUtil\QueryFactory.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CMClient.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LanClient\LanClientSession.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LanClient\LanClient.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LoginServer.cpp">
@@ -35,6 +92,48 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PdhMonitor\HMonitor.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameSession.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ParallelContent.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ContentsBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\Scheduler.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DataStructure\CLinkedList.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MySqlUtil\QueryFactory.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CMClient.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LanClient\LanClientSession.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LanClient\LanClient.cpp">
+      <Filter>Dependency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

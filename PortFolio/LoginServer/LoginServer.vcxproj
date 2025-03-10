@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\RedisUtil;$(SolutionDir)\MySqlUtil\MySQL\MySql Server 8.0\include;$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,11 +132,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\CMClient.h" />
+    <ClInclude Include="..\DataStructure\CLinkedList.h" />
+    <ClInclude Include="..\GameServerLib\ContentsBase.h" />
+    <ClInclude Include="..\GameServerLib\ContentsType.h" />
+    <ClInclude Include="..\GameServerLib\ErrType.h" />
+    <ClInclude Include="..\GameServerLib\GameServer.h" />
+    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h" />
+    <ClInclude Include="..\GameServerLib\GameSession.h" />
+    <ClInclude Include="..\GameServerLib\ParallelContent.h" />
+    <ClInclude Include="..\GameServerLib\ThreadMessage.h" />
+    <ClInclude Include="..\LanClient\LanClient.h" />
+    <ClInclude Include="..\LanClient\LanClientSession.h" />
+    <ClInclude Include="..\MySqlUtil\QueryFactory.h" />
+    <ClInclude Include="..\PdhMonitor\HMonitor.h" />
+    <ClInclude Include="..\Scheduler\Scheduler.h" />
+    <ClInclude Include="..\Scheduler\UpdateBase.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h" />
     <ClInclude Include="LoginContent.h" />
     <ClInclude Include="LoginPlayer.h" />
     <ClInclude Include="LoginServer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\CMClient.cpp" />
+    <ClCompile Include="..\DataStructure\CLinkedList.cpp" />
+    <ClCompile Include="..\GameServerLib\ContentsBase.cpp" />
+    <ClCompile Include="..\GameServerLib\GameServer.cpp" />
+    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp" />
+    <ClCompile Include="..\GameServerLib\GameSession.cpp" />
+    <ClCompile Include="..\GameServerLib\ParallelContent.cpp" />
+    <ClCompile Include="..\LanClient\LanClient.cpp" />
+    <ClCompile Include="..\LanClient\LanClientSession.cpp" />
+    <ClCompile Include="..\MySqlUtil\QueryFactory.cpp" />
+    <ClCompile Include="..\PdhMonitor\HMonitor.cpp" />
+    <ClCompile Include="..\Scheduler\Scheduler.cpp" />
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp" />
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp" />
     <ClCompile Include="LoginContent.cpp" />
     <ClCompile Include="LoginServer.cpp" />
     <ClCompile Include="main.cpp" />

@@ -1,8 +1,8 @@
 #pragma once
 #include <windows.h>
-#include "CLockFreeQueue.h"
-#include "CTlsObjectPool.h"
-#include "Packet.h"
+#include <DataStructure/CLockFreeQueue.h>
+#include <DataStructure/CTlsObjectPool.h>
+#include <SerialLizeBuffer_AND_RingBuffer/Packet.h>
 
 struct MYOVERLAPPED;
 
