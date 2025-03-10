@@ -5,9 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="GameServerLib">
-      <UniqueIdentifier>{a3c84db6-2a66-463a-98d5-f9b3fb53200c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Job">
       <UniqueIdentifier>{ca0ee171-9cb6-4f02-85bd-635bc15e4542}</UniqueIdentifier>
     </Filter>
@@ -23,83 +20,14 @@
     <Filter Include="Sector">
       <UniqueIdentifier>{206b6ac8-9115-49bc-9bac-d4353c023914}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ServerCommon">
-      <UniqueIdentifier>{e151c4fd-ac02-4cad-a3e5-660c1b6bb089}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Config">
       <UniqueIdentifier>{81e3fddf-9ebd-4a9e-9b2f-b498c2f23d18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{46a19f8e-cf88-45b2-8017-bbfeeb6673bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ErrType.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="GameServer.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="GameServerTimeOut.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="GameSession.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="ParallelContent.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="ThreadMessage.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="ContentsBase.h">
-      <Filter>GameServerLib</Filter>
-    </ClInclude>
-    <ClInclude Include="Assert.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CAddressTranslator.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLinkedList.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLockFreeQueue.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLockFreeStack.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CTlsObjectPool.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Monitorable.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="HMonitor.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Packet.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="RingBuffer.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Scheduler.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="UpdateBase.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Parser.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="RedisClientWrapper.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="MYOVERLAPPED.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
     <ClInclude Include="RecvLayer.h">
       <Filter>RecvLayer</Filter>
     </ClInclude>
@@ -127,38 +55,65 @@
     <ClInclude Include="CommonProtocol.h">
       <Filter>MakePacket</Filter>
     </ClInclude>
+    <ClInclude Include="..\GameServerLib\SerialContent.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ThreadMessage.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ErrType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameServer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\GameSession.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ParallelContent.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PdhMonitor\HMonitor.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CLinkedList.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CLockFreeQueue.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CLockFreeStack.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CTlsObjectPool.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DataStructure\CAddressTranslator.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\Scheduler.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\UpdateBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MYOVERLAPPED.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameServer.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="GameServerTimeOut.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="GameSession.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="ParallelContent.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="ContentsBase.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="CLinkedList.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="HMonitor.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="RingBuffer.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="Scheduler.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="UpdateBase.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -182,6 +137,39 @@
     </ClCompile>
     <ClCompile Include="JobProcessLayer.cpp">
       <Filter>Job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\SerialContent.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ContentsBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameSession.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ParallelContent.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PdhMonitor\HMonitor.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DataStructure\CLinkedList.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\Scheduler.cpp">
+      <Filter>Dependency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,7 @@
 #pragma once
 #include <queue>
-#include "CTlsObjectPool.h"
-#include "Packet.h"
+#include <DataStructure/CTlsObjectPool.h>
+#include <SerialLizeBuffer_AND_RingBuffer/Packet.h>
 #include "LoginChatServer.h"
 
 struct JOB

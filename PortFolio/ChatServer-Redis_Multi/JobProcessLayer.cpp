@@ -1,8 +1,8 @@
 #include <WinSock2.h>
+#include <DataStructure/CLockFreeQueue.h>
 #include "LoginChatServer.h"
 #include "JobProcessLayer.h"
 #include "Job.h"
-#include "CLockFreeQueue.h"
 
 extern CLockFreeQueue<JOB*> g_jobQ;
 

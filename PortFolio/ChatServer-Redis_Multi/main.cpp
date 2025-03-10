@@ -1,6 +1,6 @@
 #include <Winsock2.h>
+#include <Parser.h>
 #include "LoginChatServer.h"
-#include "Parser.h"
 
 LoginChatServer* g_pChatServer;
 

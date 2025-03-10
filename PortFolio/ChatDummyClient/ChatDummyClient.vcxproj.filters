@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DummyUpdateLogic">
+      <UniqueIdentifier>{823ef865-d702-4602-bc40-dec90204d53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChatDummy">
+      <UniqueIdentifier>{ff9fb7b8-0f23-4b02-825e-ad1f16d30e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MakePacket">
+      <UniqueIdentifier>{8131c08e-79c9-429c-b4e5-283393655136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccountInfo">
+      <UniqueIdentifier>{fbdef032-186a-4499-9150-606cfed13448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChatSample">
+      <UniqueIdentifier>{007cf6e3-e6fb-43fb-a3d0-511c815f4111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{5ca52918-6d5f-4ba3-aa84-5e0ffabe1f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetClient">
+      <UniqueIdentifier>{2d783d85-7f36-41b7-89a9-90bc82c2b7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginDummy">
+      <UniqueIdentifier>{3366d72b-5a17-47ab-b023-e8036bf85f15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetClient.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="NetClientSession.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountInfo.h">
+      <Filter>AccountInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Lyrics.h">
+      <Filter>ChatSample</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetClientSession.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="NetClient.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountInfo.cpp">
+      <Filter>AccountInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Lyrics.cpp">
+      <Filter>ChatSample</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ID1.txt">
+      <Filter>AccountInfo</Filter>
+    </Text>
+    <Text Include="ID2.txt">
+      <Filter>AccountInfo</Filter>
+    </Text>
+    <Text Include="ID3.txt">
+      <Filter>AccountInfo</Filter>
+    </Text>
+    <Text Include="ID4.txt">
+      <Filter>AccountInfo</Filter>
+    </Text>
+    <Text Include="ChatList.txt">
+      <Filter>ChatSample</Filter>
+    </Text>
+    <Text Include="DummyConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

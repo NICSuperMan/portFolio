@@ -1,14 +1,13 @@
 #include <WinSock2.h>
 #include "RecvLayer.h"
-#include "CommonProtocol.h"
+#include <Common/CommonProtocol.h>
 #include "Player.h"
-#include "RedisClientWrapper.h"
-#include <cpp_redis\cpp_redis>
+#include <RedisUtil/cpp_redis\cpp_redis>
+#include <RedisUtil/RedisClientWrapper.h>
 #include "SCCContents.h"
 #include "DuplicateLogin.h"
-#include "CLockFreeQueue.h"
+#include <DataStructure/CLockFreeQueue.h>
 #include "Job.h"
-
 #include "Sector.h"
 
 

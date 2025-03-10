@@ -1,8 +1,9 @@
 #include <WinSock2.h>
 #include <windows.h>
+//#include <GameServerLib/GameServerTimeOut.h>
+//#include <GameServerLib/ContentsBase.h>
 #include "LoginChatServer.h"
 #include "Player.h"
-#include "GameServerTimeOut.h"
 #include "Job.h"
 #include "Sector.h"
 #include "RecvLayer.h"

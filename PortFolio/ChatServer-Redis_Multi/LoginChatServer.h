@@ -1,6 +1,6 @@
 #pragma once
-#include "GameServer.h"
-#include "HMonitor.h"
+#include <GameServerLib/GameServer.h>
+#include <PdhMonitor/HMonitor.h>
 
 class JobProcessLayer;
 class RecvLayer;

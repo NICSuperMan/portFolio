@@ -1,6 +1,6 @@
 #pragma once
-#include "GameServer.h"
-#include "ParallelContent.h"
+#include <GameServerLib/GameServer.h>
+#include <GameServerLib/ParallelContent.h>
 struct Player;
 class RecvLayer : public ParallelContent
 {
