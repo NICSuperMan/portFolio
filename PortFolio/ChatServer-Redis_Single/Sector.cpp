@@ -1,7 +1,7 @@
 #include <WinSock2.h>
 #include <emmintrin.h>
-#include "CLinkedList.h"
-#include "Packet.h"
+#include <DataStructure/CLinkedList.h>
+#include <SerialLizeBuffer_AND_RingBuffer/Packet.h>
 #include "Sector.h"
 #include "Player.h"
 

@@ -1,14 +1,13 @@
-#include "Winsock2.h"
+#include <Winsock2.h>
+#include <GameServerLib/GameServer.h>
+#include <SerialLizeBuffer_AND_RingBuffer/Packet.h>
+#include <Common/CommonProtocol.h>
+#include <memory.h>
 #include "SCCContents.h"
-#include "GameServer.h"
 #include "ChatContents.h"
 #include "en_ChatContentsType.h"
 #include "Sector.h"
 #include "LoginChatServer.h"
-#include "Packet.h"
-#include "CommonProtocol.h"
-
-#include <memory.h>
 
 ChatContents::ChatContents(const DWORD tickPerFrame, const HANDLE hCompletionPort, const LONG pqcsLimit, GameServer* pGameServer)
 	:SerialContent{ tickPerFrame,hCompletionPort,pqcsLimit,pGameServer }, playerList{ offsetof(Player,contentLink) }

@@ -8,12 +8,6 @@
     <Filter Include="ChatContents">
       <UniqueIdentifier>{70bea654-94ac-406e-8cad-7c651e653f13}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameServerLib">
-      <UniqueIdentifier>{b37ea685-3a90-4dc4-ab76-c71335c35f12}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="LanClient">
-      <UniqueIdentifier>{ae696687-5297-41b0-be60-b15aabc94aaa}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LoginContents">
       <UniqueIdentifier>{489ba857-ce80-4660-b75e-59ca6489807d}</UniqueIdentifier>
     </Filter>
@@ -26,71 +20,14 @@
     <Filter Include="Sector">
       <UniqueIdentifier>{48dcb482-d268-4a50-8046-7d52bcd6b165}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ServerCommon">
-      <UniqueIdentifier>{f8c3fa3a-f4bb-47cd-b7ab-a4869a75218e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LoginChatServer">
       <UniqueIdentifier>{50fe57e4-9cca-48d6-a4d4-234cc0467c97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{3a05afd6-11e0-475d-99f7-5ee7e1274fb7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CMClient.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CommonProtocol.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="MYOVERLAPPED.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="RedisClientWrapper.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="ServerNum.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Assert.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLinkedList.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CAddressTranslator.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLockFreeStack.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CTlsObjectPool.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLockFreeObjectPool.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="CLockFreeQueue.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Monitorable.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="HMonitor.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="RingBuffer.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Parser.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="Scheduler.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
-    <ClInclude Include="UpdateBase.h">
-      <Filter>ServerCommon</Filter>
-    </ClInclude>
     <ClInclude Include="Sector.h">
       <Filter>Sector</Filter>
     </ClInclude>
@@ -106,68 +43,83 @@
     <ClInclude Include="Player.h">
       <Filter>LoginChatServer</Filter>
     </ClInclude>
-    <ClInclude Include="en_ChatContentsType.h">
-      <Filter>LoginChatServer</Filter>
-    </ClInclude>
-    <ClInclude Include="LanClientSession.h">
-      <Filter>LanClient</Filter>
-    </ClInclude>
-    <ClInclude Include="LanClient.h">
-      <Filter>LanClient</Filter>
-    </ClInclude>
     <ClInclude Include="ChatContents.h">
       <Filter>ChatContents</Filter>
     </ClInclude>
-    <ClInclude Include="Packet.h">
-      <Filter>ServerCommon</Filter>
+    <ClInclude Include="en_ChatContentsType.h">
+      <Filter>LoginChatServer</Filter>
     </ClInclude>
-    <ClInclude Include="SerialContent.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\DataStructure\CLockFreeQueue.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="ThreadMessage.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\DataStructure\CLockFreeStack.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="ContentsBase.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\DataStructure\CTlsObjectPool.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="ContentsType.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\DataStructure\CAddressTranslator.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="ErrType.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\DataStructure\CLinkedList.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="GameServer.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\PdhMonitor\HMonitor.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="GameServerTimeOut.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\GameServerLib\GameServer.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="GameSession.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
-    <ClInclude Include="ParallelContent.h">
-      <Filter>GameServerLib</Filter>
+    <ClInclude Include="..\GameServerLib\GameSession.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ParallelContent.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\SerialContent.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ThreadMessage.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ContentsType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameServerLib\ErrType.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\UpdateBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\Scheduler.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CMClient.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LanClient\LanClientSession.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LanClient\LanClient.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Assert.h">
+      <Filter>Dependency</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CMClient.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="CLinkedList.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="HMonitor.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="RingBuffer.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="UpdateBase.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="Scheduler.cpp">
-      <Filter>ServerCommon</Filter>
-    </ClCompile>
     <ClCompile Include="Sector.cpp">
       <Filter>Sector</Filter>
     </ClCompile>
@@ -180,35 +132,53 @@
     <ClCompile Include="LoginChatServer.cpp">
       <Filter>LoginChatServer</Filter>
     </ClCompile>
-    <ClCompile Include="LanClientSession.cpp">
-      <Filter>LanClient</Filter>
-    </ClCompile>
-    <ClCompile Include="LanClient.cpp">
-      <Filter>LanClient</Filter>
-    </ClCompile>
     <ClCompile Include="ChatContents.cpp">
       <Filter>ChatContents</Filter>
     </ClCompile>
-    <ClCompile Include="SerialContent.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="ContentsBase.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="GameServer.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="GameServerTimeOut.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="GameSession.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
-    <ClCompile Include="ParallelContent.cpp">
-      <Filter>GameServerLib</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DataStructure\CLinkedList.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PdhMonitor\HMonitor.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\GameSession.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ParallelContent.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\SerialContent.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameServerLib\ContentsBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\Scheduler.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CMClient.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LanClient\LanClientSession.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LanClient\LanClient.cpp">
+      <Filter>Dependency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

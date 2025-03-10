@@ -1,10 +1,10 @@
 #pragma once
 #pragma once
 #include <cpp_redis/cpp_redis>
-#include "GameServer.h"
-#include "Monitorable.h"
-#include "CMClient.h"
-#include "HMonitor.h"
+#include <GameServerLib/GameServer.h>
+#include <Common/CMClient.h>
+#include <PdhMonitor/HMonitor.h>
+
 #pragma comment (lib, "cpp_redis.lib")
 #pragma comment (lib, "tacopie.lib")
 #pragma comment (lib, "ws2_32.lib")

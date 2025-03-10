@@ -1,8 +1,8 @@
 #pragma once
 #include <cpp_redis\cpp_redis>
-#include "GameServer.h"
-#include "ParallelContent.h"
-#include "CommonProtocol.h"
+#include <GameServerLib/GameServer.h>
+#include <GameServerLib/ParallelContent.h>
+#include <Common/CommonProtocol.h>
 
 class LoginContents : public ParallelContent
 {

@@ -1,9 +1,9 @@
 #pragma once
 #include <windows.h>
 #include <unordered_map>
-#include "SerialContent.h"
+#include <GameServerLib/SerialContent.h>
+#include <DataStructure/CLinkedList.h>
 #include "Player.h"
-#include "CLinkedList.h"
 class ChatContents : public SerialContent 
 {
 public:

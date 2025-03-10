@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir);$(ProjectDir);$(SolutionDir)\RedisUtil;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,66 +132,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Assert.h" />
-    <ClInclude Include="CAddressTranslator.h" />
+    <ClInclude Include="..\Assert.h" />
+    <ClInclude Include="..\Common\CMClient.h" />
+    <ClInclude Include="..\DataStructure\CAddressTranslator.h" />
+    <ClInclude Include="..\DataStructure\CLinkedList.h" />
+    <ClInclude Include="..\DataStructure\CLockFreeQueue.h" />
+    <ClInclude Include="..\DataStructure\CLockFreeStack.h" />
+    <ClInclude Include="..\DataStructure\CTlsObjectPool.h" />
+    <ClInclude Include="..\GameServerLib\ContentsBase.h" />
+    <ClInclude Include="..\GameServerLib\ContentsType.h" />
+    <ClInclude Include="..\GameServerLib\ErrType.h" />
+    <ClInclude Include="..\GameServerLib\GameServer.h" />
+    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h" />
+    <ClInclude Include="..\GameServerLib\GameSession.h" />
+    <ClInclude Include="..\GameServerLib\ParallelContent.h" />
+    <ClInclude Include="..\GameServerLib\SerialContent.h" />
+    <ClInclude Include="..\GameServerLib\ThreadMessage.h" />
+    <ClInclude Include="..\LanClient\LanClient.h" />
+    <ClInclude Include="..\LanClient\LanClientSession.h" />
+    <ClInclude Include="..\PdhMonitor\HMonitor.h" />
+    <ClInclude Include="..\Scheduler\Scheduler.h" />
+    <ClInclude Include="..\Scheduler\UpdateBase.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h" />
     <ClInclude Include="ChatContents.h" />
-    <ClInclude Include="CLinkedList.h" />
-    <ClInclude Include="CLockFreeObjectPool.h" />
-    <ClInclude Include="CLockFreeQueue.h" />
-    <ClInclude Include="CLockFreeStack.h" />
-    <ClInclude Include="CMClient.h" />
-    <ClInclude Include="CommonProtocol.h" />
-    <ClInclude Include="ContentsBase.h" />
-    <ClInclude Include="ContentsType.h" />
-    <ClInclude Include="CTlsObjectPool.h" />
     <ClInclude Include="en_ChatContentsType.h" />
-    <ClInclude Include="ErrType.h" />
-    <ClInclude Include="GameServer.h" />
-    <ClInclude Include="GameServerTimeOut.h" />
-    <ClInclude Include="GameSession.h" />
-    <ClInclude Include="HMonitor.h" />
-    <ClInclude Include="LanClient.h" />
-    <ClInclude Include="LanClientSession.h" />
-    <ClInclude Include="Logger.h" />
     <ClInclude Include="LoginChatServer.h" />
     <ClInclude Include="LoginContents.h" />
-    <ClInclude Include="Monitorable.h" />
-    <ClInclude Include="MYOVERLAPPED.h" />
-    <ClInclude Include="Packet.h" />
-    <ClInclude Include="ParallelContent.h" />
-    <ClInclude Include="Parser.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="RedisClientWrapper.h" />
-    <ClInclude Include="RingBuffer.h" />
     <ClInclude Include="SCCContents.h" />
-    <ClInclude Include="Scheduler.h" />
     <ClInclude Include="Sector.h" />
-    <ClInclude Include="SerialContent.h" />
-    <ClInclude Include="ServerNum.h" />
-    <ClInclude Include="ThreadMessage.h" />
-    <ClInclude Include="UpdateBase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\CMClient.cpp" />
+    <ClCompile Include="..\DataStructure\CLinkedList.cpp" />
+    <ClCompile Include="..\GameServerLib\ContentsBase.cpp" />
+    <ClCompile Include="..\GameServerLib\GameServer.cpp" />
+    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp" />
+    <ClCompile Include="..\GameServerLib\GameSession.cpp" />
+    <ClCompile Include="..\GameServerLib\ParallelContent.cpp" />
+    <ClCompile Include="..\GameServerLib\SerialContent.cpp" />
+    <ClCompile Include="..\LanClient\LanClient.cpp" />
+    <ClCompile Include="..\LanClient\LanClientSession.cpp" />
+    <ClCompile Include="..\PdhMonitor\HMonitor.cpp" />
+    <ClCompile Include="..\Scheduler\Scheduler.cpp" />
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp" />
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp" />
     <ClCompile Include="ChatContents.cpp" />
-    <ClCompile Include="CLinkedList.cpp" />
-    <ClCompile Include="CMClient.cpp" />
-    <ClCompile Include="ContentsBase.cpp" />
-    <ClCompile Include="GameServer.cpp" />
-    <ClCompile Include="GameServerTimeOut.cpp" />
-    <ClCompile Include="GameSession.cpp" />
-    <ClCompile Include="HMonitor.cpp" />
-    <ClCompile Include="LanClient.cpp" />
-    <ClCompile Include="LanClientSession.cpp" />
     <ClCompile Include="LoginChatServer.cpp" />
     <ClCompile Include="LoginContents.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ParallelContent.cpp" />
-    <ClCompile Include="RingBuffer.cpp" />
     <ClCompile Include="SCCContents.cpp" />
-    <ClCompile Include="Scheduler.cpp" />
     <ClCompile Include="Sector.cpp" />
-    <ClCompile Include="SerialContent.cpp" />
-    <ClCompile Include="UpdateBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LoginChatConfig.txt" />

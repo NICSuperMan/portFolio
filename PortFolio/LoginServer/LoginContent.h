@@ -1,5 +1,5 @@
 #pragma once
-#include "ParallelContent.h"
+#include <GameServerLib/ParallelContent.h>
 
 class LoginContent : public ParallelContent
 {

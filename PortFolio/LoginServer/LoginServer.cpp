@@ -1,10 +1,10 @@
 #include <WinSock2.h>
 #include <windows.h>
 #include <WS2tcpip.h>
+#include <SerialLizeBuffer_AND_RingBuffer/Packet.h>
+#include <Common/CommonProtocol.h>
 #include "LoginServer.h"
 #include "LoginPlayer.h"
-#include "Packet.h"
-#include "CommonProtocol.h"
 #include "LoginServer.h"
 #include "LoginContent.h"
 

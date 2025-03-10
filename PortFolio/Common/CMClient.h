@@ -1,5 +1,5 @@
 #pragma once
-#include "LanClient.h"
+#include <LanClient/LanClient.h>
 #include "CommonProtocol.h"
 #include "ServerNum.h"
 

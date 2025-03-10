@@ -1,6 +1,6 @@
 #pragma once
-#include<windows.h>
-#include "CLinkedList.h"
+#include <windows.h>
+#include <DataStructure/CLinkedList.h>
 
 struct Player
 {

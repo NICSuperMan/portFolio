@@ -1,5 +1,5 @@
-#include "WinSock2.h"
-#include "Packet.h"
+#include <WinSock2.h>
+#include <Common/CommonProtocol.h>
 #include "Player.h"
 #include "SCCContents.h"
 

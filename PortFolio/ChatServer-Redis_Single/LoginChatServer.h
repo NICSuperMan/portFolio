@@ -1,10 +1,10 @@
 #pragma once
-#include "GameServer.h"
-#include "CMClient.h"
-#include "HMonitor.h"
+#include <GameServerLib/GameServer.h>
+#include <GameServerLib/GameServerTimeOut.h>
+#include <Common/CMClient.h>
+#include <PdhMonitor/HMonitor.h>
 #include "ChatContents.h"
 #include "LoginContents.h"
-#include "GameServerTimeOut.h"
 
 class LoginChatServer : public GameServer
 {

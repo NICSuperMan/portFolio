@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,65 +132,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Assert.h" />
-    <ClInclude Include="CAddressTranslator.h" />
-    <ClInclude Include="CLinkedList.h" />
-    <ClInclude Include="CLockFreeQueue.h" />
-    <ClInclude Include="CLockFreeStack.h" />
-    <ClInclude Include="CMClient.h" />
-    <ClInclude Include="CommonProtocol.h" />
-    <ClInclude Include="ContentsBase.h" />
-    <ClInclude Include="CTlsObjectPool.h" />
-    <ClInclude Include="ErrType.h" />
-    <ClInclude Include="GameServer.h" />
-    <ClInclude Include="GameServerTimeOut.h" />
-    <ClInclude Include="GameSession.h" />
-    <ClInclude Include="HMonitor.h" />
-    <ClInclude Include="LanClient.h" />
-    <ClInclude Include="LanClientSession.h" />
-    <ClInclude Include="Logger.h" />
     <ClInclude Include="LoginContent.h" />
     <ClInclude Include="LoginPlayer.h" />
     <ClInclude Include="LoginServer.h" />
-    <ClInclude Include="Monitorable.h" />
-    <ClInclude Include="MYOVERLAPPED.h" />
-    <ClInclude Include="Packet.h" />
-    <ClInclude Include="ParallelContent.h" />
-    <ClInclude Include="Parser.h" />
-    <ClInclude Include="QueryFactory.h" />
-    <ClInclude Include="RedisClientWrapper.h" />
-    <ClInclude Include="RingBuffer.h" />
-    <ClInclude Include="Scheduler.h" />
-    <ClInclude Include="ServerNum.h" />
-    <ClInclude Include="ThreadMessage.h" />
-    <ClInclude Include="UpdateBase.h" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="libmysql.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="libcrypto-3-x64.dll" />
-    <None Include="libmysql.dll" />
-    <None Include="libssl-3-x64.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CLinkedList.cpp" />
-    <ClCompile Include="CMClient.cpp" />
-    <ClCompile Include="ContentsBase.cpp" />
-    <ClCompile Include="GameServer.cpp" />
-    <ClCompile Include="GameServerTimeOut.cpp" />
-    <ClCompile Include="GameSession.cpp" />
-    <ClCompile Include="HMonitor.cpp" />
-    <ClCompile Include="LanClient.cpp" />
-    <ClCompile Include="LanClientSession.cpp" />
     <ClCompile Include="LoginContent.cpp" />
     <ClCompile Include="LoginServer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ParallelContent.cpp" />
-    <ClCompile Include="QueryFactory.cpp" />
-    <ClCompile Include="RingBuffer.cpp" />
-    <ClCompile Include="Scheduler.cpp" />
-    <ClCompile Include="UpdateBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LoginLanClientConfig.txt" />
