@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatServer-Redis_Multi", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatServer-Redis_Single", "ChatServer-Redis_Single\ChatServer-Redis_Single.vcxproj", "{075DE9E7-57AF-4FE4-8632-D52288FE04C3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonitorServer", "MonitorServer\MonitorServer.vcxproj", "{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{075DE9E7-57AF-4FE4-8632-D52288FE04C3}.Release|x64.Build.0 = Release|x64
 		{075DE9E7-57AF-4FE4-8632-D52288FE04C3}.Release|x86.ActiveCfg = Release|Win32
 		{075DE9E7-57AF-4FE4-8632-D52288FE04C3}.Release|x86.Build.0 = Release|Win32
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Debug|x64.ActiveCfg = Debug|x64
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Debug|x64.Build.0 = Debug|x64
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Debug|x86.Build.0 = Debug|Win32
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Release|x64.ActiveCfg = Release|x64
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Release|x64.Build.0 = Release|x64
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Release|x86.ActiveCfg = Release|Win32
+		{1DC575DA-97A4-4DDF-9188-BF81FD0953EC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -35,7 +35,7 @@ void JobProcessLayer::Update_IMPL()
 	PostQueuedCompletionStatus(hcp_, 1, 2, (LPOVERLAPPED)&pChatServer_->OnPostOverlapped);
 	PostQueuedCompletionStatus(hcp_, 1, 3, (LPOVERLAPPED)&pChatServer_->OnPostOverlapped);
 
-	auto ret = WaitForSingleObject(pChatServer_->hUpdateThreadWakeEvent_, INFINITE);
+	DWORD ret = WaitForSingleObject(pChatServer_->hUpdateThreadWakeEvent_, INFINITE);
 
 	if (WAIT_OBJECT_0 != ret)
 	{
