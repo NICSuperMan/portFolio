@@ -20,7 +20,7 @@ void JobProcessLayer::Update_IMPL()
 	LONG compare = 0;
 	while (1)
 	{
-		auto&& opt = g_jobQ.Dequeue();
+		const auto& opt = g_jobQ.Dequeue();
 		if (!opt.has_value())
 			break;
 

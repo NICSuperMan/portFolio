@@ -103,9 +103,9 @@ void LoginContents::CS_CHAT_REQ_LOGIN(void* pPlayer, Packet* pPacket)
 
 	// 인증 토큰 레디스에서 동기로 읽어오기
 	client* pClient = GetRedisClient();
-	auto&& temp = pClient->get(std::to_string(accountNo));
+	const auto& temp = pClient->get(std::to_string(accountNo));
 	pClient->sync_commit();
-	auto&& ret = temp._Get_value();
+	const auto& ret = temp._Get_value();
 
 	// 레디스에 세션키가 없거나, 레디스에 저장된 세션키와 다르다면 로그인 실패
 	if (ret.is_null() || memcmp(pSessionKey, ret.as_string().c_str(), Player::SESSION_KEY_LEN) != 0)

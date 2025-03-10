@@ -73,7 +73,7 @@ void SerialContent::FlushInterContentsMsgQ()
 {
 	while (1)
 	{
-		auto&& opt = msgQ_.Dequeue();
+		const auto& opt = msgQ_.Dequeue();
 		if (!opt.has_value())
 			break;
 
@@ -143,7 +143,7 @@ void SerialContent::FlushSessionRecvMsgQ()
 
 		while (1)
 		{
-			auto&& opt = pSession->recvMsgQ_.Dequeue();
+			const auto& opt = pSession->recvMsgQ_.Dequeue();
 			if (!opt.has_value())
 				break;
 
