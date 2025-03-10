@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GameServerLib">
+      <UniqueIdentifier>{f8a3d9a1-1e39-4205-b8b4-25f4a234748f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LanClient">
+      <UniqueIdentifier>{eb05a76b-ab3e-4463-b0fe-4795958ecab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginServer">
+      <UniqueIdentifier>{84018cbb-2fe8-4993-97ec-eabbb0f4ade0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginContents">
+      <UniqueIdentifier>{147e6cb1-8b09-43d1-a168-7cad8c2a00ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon">
+      <UniqueIdentifier>{57375151-4b95-4f3f-9896-f9e6e78b98f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4d59e8a7-2c4b-49d0-a995-0e4ad88200b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CLockFreeStack.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CTlsObjectPool.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CAddressTranslator.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLockFreeQueue.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFactory.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="HMonitor.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitorable.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RingBuffer.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateBase.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisClientWrapper.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CMClient.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsBase.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrType.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerTimeOut.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ParallelContent.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadMessage.h">
+      <Filter>GameServerLib</Filter>
+    </ClInclude>
+    <ClInclude Include="LanClientSession.h">
+      <Filter>LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="LanClient.h">
+      <Filter>LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginServer.h">
+      <Filter>LoginServer</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginPlayer.h">
+      <Filter>LoginContents</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginContent.h">
+      <Filter>LoginContents</Filter>
+    </ClInclude>
+    <ClInclude Include="MYOVERLAPPED.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerNum.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinkedList.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Assert.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libmysql.lib">
+      <Filter>ServerCommon</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libssl-3-x64.dll">
+      <Filter>ServerCommon</Filter>
+    </None>
+    <None Include="libcrypto-3-x64.dll">
+      <Filter>ServerCommon</Filter>
+    </None>
+    <None Include="libmysql.dll">
+      <Filter>ServerCommon</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QueryFactory.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="HMonitor.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBuffer.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateBase.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="CMClient.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerTimeOut.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelContent.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsBase.cpp">
+      <Filter>GameServerLib</Filter>
+    </ClCompile>
+    <ClCompile Include="LanClientSession.cpp">
+      <Filter>LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="LanClient.cpp">
+      <Filter>LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServer.cpp">
+      <Filter>LoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginContent.cpp">
+      <Filter>LoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CLinkedList.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LoginLanClientConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+    <Text Include="LoginServerConfig.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
