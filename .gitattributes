@@ -1,1 +1,3 @@
 *.py linguist-vendored
+*.vbs linguist-vendored
+*.html linguist-vendored
