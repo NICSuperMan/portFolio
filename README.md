@@ -3,7 +3,7 @@
 ---
 
 ## 📂 주요 폴더 설명
-ㅁ
+
 ### 🔹 서버 관련
 - **`ChatServer-Redis_Multi`** : 멀티스레드 기반 채팅 서버  
 - **`ChatServer-Redis_Single`** : 싱글스레드 기반 채팅 서버  
