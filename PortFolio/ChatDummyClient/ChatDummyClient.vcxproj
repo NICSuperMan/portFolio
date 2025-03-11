@@ -70,6 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <ExecutablePath>$(ProjectDir);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -118,6 +123,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,16 +133,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\NetClient\NetClient.h" />
+    <ClInclude Include="..\NetClient\NetClientSession.h" />
+    <ClInclude Include="..\Scheduler\Scheduler.h" />
+    <ClInclude Include="..\Scheduler\UpdateBase.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h" />
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h" />
     <ClInclude Include="AccountInfo.h" />
+    <ClInclude Include="ChatDummy.h" />
+    <ClInclude Include="CurrentServerType.h" />
+    <ClInclude Include="LoginDummy.h" />
     <ClInclude Include="Lyrics.h" />
-    <ClInclude Include="NetClient.h" />
-    <ClInclude Include="NetClientSession.h" />
+    <ClInclude Include="MakePacket.h" />
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RecvJob.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Update.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\NetClient\NetClient.cpp" />
+    <ClCompile Include="..\NetClient\NetClientSession.cpp" />
+    <ClCompile Include="..\Scheduler\Scheduler.cpp" />
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp" />
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp" />
     <ClCompile Include="AccountInfo.cpp" />
+    <ClCompile Include="ChatDummy.cpp" />
+    <ClCompile Include="LoginDummy.cpp" />
     <ClCompile Include="Lyrics.cpp" />
-    <ClCompile Include="NetClient.cpp" />
-    <ClCompile Include="NetClientSession.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MakePacket.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ChatList.txt" />

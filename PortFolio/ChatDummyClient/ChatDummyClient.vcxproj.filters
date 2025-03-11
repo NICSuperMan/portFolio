@@ -23,39 +23,111 @@
     <Filter Include="Config">
       <UniqueIdentifier>{5ca52918-6d5f-4ba3-aa84-5e0ffabe1f1c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="NetClient">
-      <UniqueIdentifier>{2d783d85-7f36-41b7-89a9-90bc82c2b7ea}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LoginDummy">
       <UniqueIdentifier>{3366d72b-5a17-47ab-b023-e8036bf85f15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NetClient">
+      <UniqueIdentifier>{7b579f2e-a4e4-4c26-9081-b138206e0894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependency">
+      <UniqueIdentifier>{97f38021-8c06-41d2-b5f9-ba7c7baff87e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NetClient.h">
-      <Filter>NetClient</Filter>
-    </ClInclude>
-    <ClInclude Include="NetClientSession.h">
-      <Filter>NetClient</Filter>
-    </ClInclude>
     <ClInclude Include="AccountInfo.h">
       <Filter>AccountInfo</Filter>
     </ClInclude>
     <ClInclude Include="Lyrics.h">
       <Filter>ChatSample</Filter>
     </ClInclude>
+    <ClInclude Include="..\NetClient\NetClient.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetClient\NetClientSession.h">
+      <Filter>NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\Scheduler.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scheduler\UpdateBase.h">
+      <Filter>Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatDummy.h">
+      <Filter>ChatDummy</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDummy.h">
+      <Filter>LoginDummy</Filter>
+    </ClInclude>
+    <ClInclude Include="Update.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvJob.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentServerType.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="MakePacket.h">
+      <Filter>MakePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitor.h">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NetClientSession.cpp">
-      <Filter>NetClient</Filter>
-    </ClCompile>
-    <ClCompile Include="NetClient.cpp">
-      <Filter>NetClient</Filter>
-    </ClCompile>
     <ClCompile Include="AccountInfo.cpp">
       <Filter>AccountInfo</Filter>
     </ClCompile>
     <ClCompile Include="Lyrics.cpp">
       <Filter>ChatSample</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetClient\NetClientSession.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetClient\NetClient.cpp">
+      <Filter>NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\Scheduler.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scheduler\UpdateBase.cpp">
+      <Filter>Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatDummy.cpp">
+      <Filter>ChatDummy</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDummy.cpp">
+      <Filter>LoginDummy</Filter>
+    </ClCompile>
+    <ClCompile Include="Update.cpp">
+      <Filter>DummyUpdateLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="MakePacket.cpp">
+      <Filter>MakePacket</Filter>
+    </ClCompile>
+    <ClCompile Include="Monitor.cpp">
+      <Filter>DummyUpdateLogic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
