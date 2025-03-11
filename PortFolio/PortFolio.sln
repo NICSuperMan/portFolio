@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatDistributeClient", "Cha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoggerMT", "Logger\LoggerMT.vcxproj", "{5D2D858E-3FF4-4AAE-B624-19CE57651F71}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TlsMalloc", "TlsMalloc\TlsMalloc.vcxproj", "{C2662D83-F755-4C53-845E-96979402E4EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{5D2D858E-3FF4-4AAE-B624-19CE57651F71}.Release|x64.Build.0 = Release|x64
 		{5D2D858E-3FF4-4AAE-B624-19CE57651F71}.Release|x86.ActiveCfg = Release|Win32
 		{5D2D858E-3FF4-4AAE-B624-19CE57651F71}.Release|x86.Build.0 = Release|Win32
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Debug|x64.ActiveCfg = Debug|x64
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Debug|x64.Build.0 = Debug|x64
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Debug|x86.Build.0 = Debug|Win32
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Release|x64.ActiveCfg = Release|x64
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Release|x64.Build.0 = Release|x64
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Release|x86.ActiveCfg = Release|Win32
+		{C2662D83-F755-4C53-845E-96979402E4EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
