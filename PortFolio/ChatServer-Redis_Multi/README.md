@@ -18,14 +18,14 @@
 - **`LoginChatServer.h/.cpp`**  
   - `GameServer`를 상속한 **채팅 IOCP** 구현  
 - **`RecvLayer.h/.cpp`**  
-  - **메시지 수신 시** `JOB` 구조체를 적절히 초기화 후 **전역 JOB 큐에 삽입**  
+  - **메시지 수신 시** `JOB` 구조체를 적절히 초기화 후 **전역 JOB 큐에 삽입** 로직 구현
 - **`Job.h/.cpp`**  
   - **`SECTOR_MOVE_JOB`, `BROADCAST_JOB`**의 주요 로직 구현  
 - **`JobProcessLayer.h/.cpp`**  
-  - **프레임 스레드가 매 프레임마다 수행하는 로직**  
+  - **프레임 스레드가 매 프레임마다 수행하는 로직** 구현
   - **전역 JOB 큐의 모든 JOB을 사분면 JOB 큐에 분배**  
 - **`DuplicateLogin.h/.cpp`**  
-  - **같은 계정 중복 로그인 시, 먼저 접속한 클라이언트를 강제 종료**  
+  - **같은 계정 중복 로그인 시, 먼저 접속한 클라이언트를 강제 종료** 구현
 - **`Sector.h/.cpp`**  
   - **클라이언트 섹터 삽입/삭제, 가시거리 섹터 탐색** 로직 구현  
 - **`SCCContents.h/.cpp`**  
