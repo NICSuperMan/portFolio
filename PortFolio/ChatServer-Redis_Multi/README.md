@@ -2,8 +2,10 @@
 특징 : 전체 맵(2500섹터)를 4분할하고 프레임마다 4개의 스레드로 병렬 분할처리
 
 # 스레드 구조
+<img width="1910" alt="image" src="https://github.com/user-attachments/assets/8feb19ef-0be1-47c2-92c4-866b32c13008" />
 
 # 섹터 처리 방식
+<img width="1907" alt="image" src="https://github.com/user-attachments/assets/4b95e700-4f71-442d-be78-86c131e2cf5f" />
 
 ## 📂 주요 파일 설명  
 - **`LoginChatServer.h/.cpp`** : `GameServer`를 상속한 **채팅 IOCP** 구현
