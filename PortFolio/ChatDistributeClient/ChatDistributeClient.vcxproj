@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9e43edae-864a-40f2-aa1f-542cf3615dbe}</ProjectGuid>
-    <RootNamespace>LoginServer</RootNamespace>
+    <ProjectGuid>{23ad769f-9ad6-49a3-9013-a733720d63d4}</ProjectGuid>
+    <RootNamespace>ChatDistributeClient</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,18 +71,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)\RedisUtil;$(SolutionDir)\MySqlUtil\MySQL\MySql Server 8.0\include;$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir);$(IncludePath)</IncludePath>
     <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -92,11 +92,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -106,11 +106,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -120,63 +120,52 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <Optimization>Disabled</Optimization>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\CMClient.h" />
-    <ClInclude Include="..\DataStructure\CLinkedList.h" />
-    <ClInclude Include="..\GameServerLib\ContentsBase.h" />
-    <ClInclude Include="..\GameServerLib\ContentsType.h" />
-    <ClInclude Include="..\GameServerLib\ErrType.h" />
-    <ClInclude Include="..\GameServerLib\GameServer.h" />
-    <ClInclude Include="..\GameServerLib\GameServerTimeOut.h" />
-    <ClInclude Include="..\GameServerLib\GameSession.h" />
-    <ClInclude Include="..\GameServerLib\ParallelContent.h" />
-    <ClInclude Include="..\GameServerLib\ThreadMessage.h" />
-    <ClInclude Include="..\LanClient\LanClient.h" />
-    <ClInclude Include="..\LanClient\LanClientSession.h" />
-    <ClInclude Include="..\MySqlUtil\QueryFactory.h" />
-    <ClInclude Include="..\PdhMonitor\HMonitor.h" />
+    <ClInclude Include="..\NetClient\NetClient.h" />
+    <ClInclude Include="..\NetClient\NetClientSession.h" />
     <ClInclude Include="..\Scheduler\Scheduler.h" />
     <ClInclude Include="..\Scheduler\UpdateBase.h" />
     <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\Packet.h" />
     <ClInclude Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.h" />
-    <ClInclude Include="LoginContent.h" />
-    <ClInclude Include="LoginPlayer.h" />
-    <ClInclude Include="LoginServer.h" />
+    <ClInclude Include="ChatDistributeClient.h" />
+    <ClInclude Include="ChatDistributionClient.h" />
+    <ClInclude Include="DistributionClientConstant.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="HeartBeatUpdate.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\CMClient.cpp" />
-    <ClCompile Include="..\DataStructure\CLinkedList.cpp" />
-    <ClCompile Include="..\GameServerLib\ContentsBase.cpp" />
-    <ClCompile Include="..\GameServerLib\GameServer.cpp" />
-    <ClCompile Include="..\GameServerLib\GameServerTimeOut.cpp" />
-    <ClCompile Include="..\GameServerLib\GameSession.cpp" />
-    <ClCompile Include="..\GameServerLib\ParallelContent.cpp" />
-    <ClCompile Include="..\LanClient\LanClient.cpp" />
-    <ClCompile Include="..\LanClient\LanClientSession.cpp" />
-    <ClCompile Include="..\MySqlUtil\QueryFactory.cpp" />
-    <ClCompile Include="..\PdhMonitor\HMonitor.cpp" />
+    <ClCompile Include="..\NetClient\NetClient.cpp" />
+    <ClCompile Include="..\NetClient\NetClientSession.cpp" />
     <ClCompile Include="..\Scheduler\Scheduler.cpp" />
     <ClCompile Include="..\Scheduler\UpdateBase.cpp" />
     <ClCompile Include="..\SerialLizeBuffer_AND_RingBuffer\RingBuffer.cpp" />
-    <ClCompile Include="LoginContent.cpp" />
-    <ClCompile Include="LoginServer.cpp" />
+    <ClCompile Include="ChatDistributionClient.cpp" />
+    <ClCompile Include="HeartBeatUpdate.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="LoginLanClientConfig.txt" />
-    <Text Include="LoginServerConfig.txt" />
+    <ResourceCompile Include="ChatDistributeClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ChatDistributeClient.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DistributionClientConfig.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
