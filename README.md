@@ -33,7 +33,7 @@
 - **`DataStructure`** :  
   - 락프리 큐, 락프리 스택  
   - Embedded Linked List (싱글 채팅 서버 및 메모리 누수 방지에 사용)  
-  - `TlsObjectPool`  
+  - TlsObjectPool
 
 ### 🔹 로깅 & 파싱
 - **`Logger`** :  
