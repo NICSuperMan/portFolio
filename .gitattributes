@@ -1,1 +1,4 @@
 *.py linguist-vendored
+PortFolio/MySqlUtil/MySQL/* linguist-vendored
+PortFolio/RedisUtil/cpp_redis/* linguist-vendored
+PortFolio/RedisUtil/tacopie/* linguist-vendored
