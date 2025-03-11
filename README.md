@@ -41,7 +41,7 @@
 - **`TextParser`** :  
   모든 서버 및 클라이언트에서 설정 파일(`ConfigFile`)을 읽을 때 사용하는 `TextParser.dll`, `TextParser.lib` 구현  
 
-### 🔹 DB & 캐시 관련
+### 🔹 DB & REDIS 관련
 - **`MySqlUtil`** :  
   MySQL 쿼리 문자열 조합 기능 및 필요한 MySQL 관련 파일 포함  
 - **`RedisUtil`** :  
