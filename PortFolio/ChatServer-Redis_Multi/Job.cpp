@@ -90,7 +90,6 @@ void BROADCAST_JOB::Excute(int order)
 // PQCS 워커스레드가 실행
 void JOB::FlushOrderJobQ(int order)
 {
-	//printf("order : %d\n", order);
 	JOB* pJob;
 	while (!orderJobQ_[order].empty())
 	{
