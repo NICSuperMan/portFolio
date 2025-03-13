@@ -66,4 +66,7 @@
 ### 🔹 테스트 코드
 - TlsObjectPool Alloc,Free VS malloc,free 성능 비교 테스트 코드 -> TlsMalloc 폴더
 - LockFreeQueue Vs Critical Section Queue Vs SpinLock Queue 성능 비교 테스트 코드 -> LockFreeVersusSpinLock
+
+### 🔹 길찾기 검증 테스트
+- PathFInd_GUI_TEST
 ---
